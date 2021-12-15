@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+       ul 
+        div#logo 
+          img(src="../static/logo.jpg")
+          |HDA
+        li #[a(href = "/") Home]
+        li #[a(href = "/") About]
+        li #[a(href = "/") Services]
+        li #[a(href = "/") Class Info]
+        li #[a(href = "/") Contact Us] 
+
+    section#introsection 
+        div Welcome to Vishal's Dance Academy 
+        div.small Learn Dance Sleep Repeat
+
+    section#ooi
+         h2 OurMission
+    section#missionsection 
+          div.card
+          p Dance Perfection  
+           img(src="../static/chotu.jpg")
+          div.card
+          p Dance the way you like
+           img(src="../static/rdm.jpg")
+          div.card
+          p Expert Teaching
+           img(src="../static/img6.jpg")
+
+        
+    section#sponsorsection 
+      h1 Our Sponsors
+        div#oursponsers
+          img(src="../static/img2.jpg", alt="sponsor images",class="spimages", id="mdt")
+          img(src="../static/microsoft.png", alt="sponsor images",class="spimages")
+          img(src="../static/skype.png", alt="sponsor images",class="spimages", id="ndt")
+          img(src="../static/hp.jpg", alt="sponsor images",class="spimages",id="sdt")
+         
+    footer#footer 
+        | 2022 @ VishalDanceAcademy | All rights reserved       
+        
+    script
+      include ../static/index.js
